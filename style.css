@@ -354,3 +354,24 @@ button { font-family: inherit; }
   .hero { padding-top: 120px; }
   .float-chip { display: none; }
 }
+
+
+/* Light-theme glass surfaces: keep portrait overlays bright and readable */
+[data-theme="light"] .portrait-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(15, 23, 42, 0.14);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+}
+[data-theme="light"] .portrait-card strong {
+  color: var(--heading);
+}
+[data-theme="light"] .portrait-card span {
+  color: var(--text-2);
+}
+[data-theme="light"] .float-chip,
+[data-theme="light"] .photo-badge {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(15, 23, 42, 0.14);
+  color: var(--heading);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+}
